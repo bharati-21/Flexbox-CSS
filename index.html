@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Flexbox CSS</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.4;
+                background: #f8f9fa;
+                color: #333; 
+            }    
+            
+            .container {
+                max-width: 1100px;
+                margin: 1rem auto;
+            }
+
+            .head {
+                text-align: center;
+            }
+
+            .properties-container {
+                margin: 2rem;
+                border-radius: 10px;
+                padding: 1rem;
+                border: 1px dotted #333;
+                display: block;
+                min-width: 250px;
+            }
+
+            .sub-head {
+                text-align: center;
+                margin-bottom: 0.75rem;
+            }
+
+            .properties {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .properties > div {
+                margin: 1rem;
+            }
+
+            .btn {
+                text-decoration: none;
+                font-size: 1.5rem;
+                padding: 0.75rem 1rem;
+                border-radius: 10px;
+                text-align: center;
+                width: 200px;
+                display: block;
+                color: #fff;
+                border: 2px solid #333;
+            }
+            
+            .btn-success {
+                background: #00741b;
+                
+            }
+            
+            .btn-warning {
+                background: #dc3545;
+            }
+
+            .btn:hover {
+                opacity: 0.9;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="head">CSS FLEXBOX PROPERTIES</h1>
+            <div id="parent-properties" class="properties-container">
+                <h2 class="sub-head">Parent - Flex Container Properties</h2>
+                <div class="properties">
+                    <div><a href="display.html" class="btn btn-warning">Display</a></div>
+                    <div><a href="flexDirection.html" class="btn btn-warning">Flex Direction</a></div>
+                    <div><a href="flexWrap.html" class="btn btn-warning">Flex Wrap</a></div>
+                    <div><a href="justifyContent.html" class="btn btn-warning">Justify Content</a></div>
+                    <div><a href="alignItems.html" class="btn btn-warning">Align Items</a></div>
+                    <div><a href="alignItems.html" class="btn btn-warning">Align Content</a></div>
+                    <!-- <div><a href="flexGrow.html" class="btn btn-success">Flex Grow</a></div> -->
+                </div>
+            </div>
+
+            <div id="children-properties" class="properties-container">
+                <h2 class="sub-head">Children - Flex Item Properties</h2>
+                <div class="properties">
+                    <div><a href="order.html" class="btn btn-success">Order</a></div>
+                    <div><a href="alignSelf.html" class="btn btn-success">Align Self</a></div>
+                    <div><a href="flexGrow.html" class="btn btn-success">Flex Grow</a></div>
+                    <div><a href="flexShrink.html" class="btn btn-success">Flex Shrink</a></div>
+                    <div><a href="flexBasis.html" class="btn btn-success">Flex Basis</a></div>
+                    <!-- <div><a href="flex.html" class="btn btn-success">Flex</a></div> -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
