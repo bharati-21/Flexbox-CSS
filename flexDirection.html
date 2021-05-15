@@ -25,6 +25,10 @@
                 max-width: 1120px;
                 margin: 1rem auto;    
                 padding: 1rem 2rem;
+                border: 2px solid #000;
+                /* display: grid;
+                grid-gap: 2.5rem;
+                grid-template-columns: repeat(2, 1fr); */
             }
 
             .flex-container {
@@ -35,12 +39,14 @@
             }
 
             .flex-item {
-                padding: 1.5rem;
-                margin: 1rem;
+                padding: 1rem;
+                margin: 0.75rem;
                 border: 2px solid #333;
                 border-radius: 5px;
                 font-weight: bold;
                 background-color: #fff;
+
+                /* font-size: 1.5rem; */
             }
 
             #container1 {
@@ -81,6 +87,7 @@
             p {
                 margin-bottom: 2rem;
                 font-size: 1.2rem;
+                font-weight: bold;
             }
 
             nav {
@@ -124,8 +131,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="display.html">Display</a></li>
-                <li><a href="flexWrap.html">Flex Wrap</a></li>
                 <li><a href="flexDirection.html" class="current-link">Flex Direction</a></li>
+                <li><a href="flexWrap.html">Flex Wrap</a></li>
                 <li><a href="justifyContent.html">Justify Content</a></li>
                 <li><a href="alignItems.html">Align Items</a></li>
                 <li><a href="alignContent.html">Align Content</a></li>
@@ -134,7 +141,7 @@
         <h1>PARENT FLEX PROPERTY</h1>
         <h2><em>FLEX DIRECTION</em></h2>
         <main>
-            <div class="no-wrap">
+            <div class="container">
                 <div class="flex-container" id="container1">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -145,7 +152,7 @@
                 <p><em>flex-direction: row;</em></p>
             </div>
 
-            <div>
+            <div class="container">
                 <div class="flex-container" id="container2">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -156,7 +163,7 @@
                 <p><em>flex-direction: row-reverse;</em></p>
             </div>
 
-            <div>
+            <div class="container">
                 <div class="flex-container" id="container3">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -167,7 +174,7 @@
                 <p><em>flex-direction: column;</em></p>
             </div>
 
-            <div>
+            <div class="container">
                 <div class="flex-container" id="container4">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
