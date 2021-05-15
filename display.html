@@ -25,6 +25,12 @@
                 max-width: 1120px;
                 margin: 1rem auto;    
                 padding: 1rem 2rem;
+                border: 2px solid #000;
+            }
+
+            .container {
+                padding: 1rem;
+                margin-bottom: 1rem;
             }
 
             .flex-container {
@@ -41,7 +47,7 @@
                 border-radius: 5px;
                 font-weight: bold;
                 background-color: #fff;
-                font-size: 1.5rem;
+                /* font-size: 1.5rem; */
             }
 
             #container1 {
@@ -65,7 +71,7 @@
 
             p {
                 margin-bottom: 1rem;
-                font-size: 1.8rem;
+                font-size: 1.2rem;
                 font-weight: bold;
             }
 
@@ -110,8 +116,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="display.html" class="current-link">Display</a></li>
-                <li><a href="flexWrap.html">Flex Wrap</a></li>
                 <li><a href="flexDirection.html">Flex Direction</a></li>
+                <li><a href="flexWrap.html">Flex Wrap</a></li>
                 <li><a href="justifyContent.html">Justify Content</a></li>
                 <li><a href="alignItems.html">Align Items</a></li>
                 <li><a href="alignContent.html">Align Content</a></li>
@@ -120,22 +126,27 @@
         <h1>PARENT FLEX PROPERTY</h1>
         <h2><em>DISPLAY</em></h2>
         <main>
-            <div class="flex-container" id="container1">
-                <div class="flex-item">1</div>
-                <div class="flex-item">2</div>
-                <div class="flex-item">3</div>
-                <div class="flex-item">4</div>
-                <div class="flex-item">5</div>
+            <div class="container">
+                <div class="flex-container" id="container1">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>display: flex;</em></p>
             </div>
-            <p><em>display: flex;</em></p>
-            <div class="flex-container" id="container2">
-                <div class="flex-item">1</div>
-                <div class="flex-item">2</div>
-                <div class="flex-item">3</div>
-                <div class="flex-item">4</div>
-                <div class="flex-item">5</div>
+            
+            <div class="container">
+                <div class="flex-container" id="container2">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>display: inline-flex;</em></p>
             </div>
-            <p><em>display: inline-flex;</em></p>
         </main>
     </body>
 </html>
