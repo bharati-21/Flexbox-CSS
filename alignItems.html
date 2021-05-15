@@ -32,6 +32,7 @@
                 border: 2px solid #333;
                 border-radius: 5px;
                 margin: 1rem 0 0.5rem 0;
+                min-height: 200px;
             }
 
             .flex-item {
@@ -41,50 +42,67 @@
                 border-radius: 5px;
                 font-weight: bold;
                 background-color: #fff;
+
+                font-size: 1.5rem;
             }
 
             #container1 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-
-                justify-content: flex-start;
+                /* justify-content: flex-start; */
+                align-items: stretch;
             }
 
             #container2 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: flex-end;
+                /* justify-content: flex-end; */
+                align-items: flex-start;
+                
             }
 
             #container3 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: center;
+                /* justify-content: center; */
+                align-items: flex-end;
             }
 
             #container4 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                /* justify-content: space-between; */
+                align-items: center;
             }
 
             #container5 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                align-items: baseline;
             }
 
-            #container6 {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+            #container5 > #item2{
+                font-size: 0.7rem;
             }
+
+            #container5 > #item3{
+                font-size: 2rem;
+            }
+
+            #container5 > #item4{
+                font-size: 3rem;
+            }
+
+            #container5 > #item5{
+                font-size: 1rem;
+            }
+
+            
 
             h1 {
                 text-align: center;
@@ -148,13 +166,13 @@
                 <li><a href="display.html">Display</a></li>
                 <li><a href="flexWrap.html">Flex Wrap</a></li>
                 <li><a href="flexDirection.html">Flex Direction</a></li>
-                <li><a href="justifyContent.html" class="current-link">Justify Content</a></li>
-                <li><a href="alignItems.html">Align Items</a></li>
+                <li><a href="justifyContent.html">Justify Content</a></li>
+                <li><a href="alignItems.html"  class="current-link">Align Items</a></li>
                 <li><a href="alignContent.html">Align Content</a></li>
             </ul>
         </nav>
         <h1>PARENT FLEX PROPERTY</h1>
-        <h2><em>FLEX DIRECTION</em></h2>
+        <h2><em>ALIGN ITEMS</em></h2>
         <main>
             <div class="no-wrap">
                 <div class="flex-container" id="container1">
@@ -164,7 +182,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: flex-start;</em></p>
+                <p><em>align-items: stretch;</em></p>
             </div>
 
             <div>
@@ -175,7 +193,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: flex-end;</em></p>
+                <p><em>align-items: flex-start;</em></p>
             </div>
 
             <div>
@@ -186,7 +204,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: center;</em></p>
+                <p><em>align-items: flex-end;</em></p>
             </div>
 
             <div>
@@ -197,29 +215,18 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: space-between;</em></p>
+                <p><em>align-items: center;</em></p>
             </div>
 
             <div>
                 <div class="flex-container" id="container5">
-                    <div class="flex-item">1</div>
-                    <div class="flex-item">2</div>
-                    <div class="flex-item">3</div>
-                    <div class="flex-item">4</div>
-                    <div class="flex-item">5</div>
+                    <div class="flex-item" id="item1">1</div>
+                    <div class="flex-item" id="item2">2</div>
+                    <div class="flex-item" id="item3">3</div>
+                    <div class="flex-item" id="item4">4</div>
+                    <div class="flex-item" id="item5">5</div>
                 </div>
-                <p><em>justify-content: space-around;</em></p>
-            </div>
-
-            <div>
-                <div class="flex-container" id="container6">
-                    <div class="flex-item">1</div>
-                    <div class="flex-item">2</div>
-                    <div class="flex-item">3</div>
-                    <div class="flex-item">4</div>
-                    <div class="flex-item">5</div>
-                </div>
-                <p><em>justify-content: space-evenly;</em></p>
+                <p><em>align-items: baseline;</em></p>
             </div>
         </main>
     </body>

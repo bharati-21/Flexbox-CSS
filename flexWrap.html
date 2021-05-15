@@ -41,15 +41,21 @@
                 border-radius: 5px;
                 font-weight: bold;
                 background-color: #fff;
-                font-size: 1.5rem;
             }
 
             #container1 {
                 display: flex;
+                flex-wrap: nowrap;
             }
 
             #container2 {
-                display: inline-flex;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #container3 {
+                display: flex;
+                flex-wrap: wrap-reverse;
             }
 
             h1 {
@@ -64,9 +70,8 @@
             }
 
             p {
-                margin-bottom: 1rem;
-                font-size: 1.8rem;
-                font-weight: bold;
+                margin-bottom: 2rem;
+                font-size: 1.2rem;
             }
 
             nav {
@@ -109,8 +114,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="display.html" class="current-link">Display</a></li>
-                <li><a href="flexWrap.html">Flex Wrap</a></li>
+                <li><a href="display.html">Display</a></li>
+                <li><a href="flexWrap.html" class="current-link">Flex Wrap</a></li>
                 <li><a href="flexDirection.html">Flex Direction</a></li>
                 <li><a href="justifyContent.html">Justify Content</a></li>
                 <li><a href="alignItems.html">Align Items</a></li>
@@ -118,7 +123,7 @@
             </ul>
         </nav>
         <h1>PARENT FLEX PROPERTY</h1>
-        <h2><em>DISPLAY</em></h2>
+        <h2><em>FLEX WRAP</em></h2>
         <main>
             <div class="flex-container" id="container1">
                 <div class="flex-item">1</div>
@@ -127,7 +132,7 @@
                 <div class="flex-item">4</div>
                 <div class="flex-item">5</div>
             </div>
-            <p><em>display: flex;</em></p>
+            <p><em>flex-wrap: no-wrap;</em></p>
             <div class="flex-container" id="container2">
                 <div class="flex-item">1</div>
                 <div class="flex-item">2</div>
@@ -135,7 +140,15 @@
                 <div class="flex-item">4</div>
                 <div class="flex-item">5</div>
             </div>
-            <p><em>display: inline-flex;</em></p>
+            <p><em>flex-wrap: wrap;</em></p>
+            <div class="flex-container" id="container3">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+            </div>
+            <p><em>flex-wrap: wrap-reverse;</em></p>
         </main>
     </body>
 </html>

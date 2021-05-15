@@ -22,7 +22,7 @@
             }    
             
             .container {
-                max-width: 1100px;
+                max-width: 1200px;
                 margin: 1rem auto;
             }
 
@@ -32,11 +32,11 @@
 
             .properties-container {
                 margin: 2rem;
-                border-radius: 10px;
                 padding: 1rem;
                 border: 1px dotted #333;
                 display: block;
                 min-width: 250px;
+                background: #ddd;
             }
 
             .sub-head {
@@ -60,7 +60,7 @@
                 text-decoration: none;
                 font-size: 1.5rem;
                 padding: 0.75rem 1rem;
-                border-radius: 10px;
+                /* border-radius: 5px; */
                 text-align: center;
                 width: 200px;
                 display: block;
@@ -77,8 +77,11 @@
                 background: #dc3545;
             }
 
-            .btn:hover {
-                opacity: 0.9;
+            .btn-warning:hover {
+                background:#a00413;
+            }
+            .btn-success:hover {
+                background: #01360e;
             }
         </style>
         
@@ -95,11 +98,11 @@
                     <div><a href="justifyContent.html" class="btn btn-warning">Justify Content</a></div>
                     <div><a href="alignItems.html" class="btn btn-warning">Align Items</a></div>
                     <div><a href="alignItems.html" class="btn btn-warning">Align Content</a></div>
-                    <!-- <div><a href="flexGrow.html" class="btn btn-success">Flex Grow</a></div> -->
+                    <!-- <div><a href="flexFlow.html" class="btn btn-success">Flex Grow</a></div> -->
                 </div>
             </div>
 
-            <div id="children-properties" class="properties-container">
+            <!-- <div id="children-properties" class="properties-container">
                 <h2 class="sub-head">Children - Flex Item Properties</h2>
                 <div class="properties">
                     <div><a href="order.html" class="btn btn-success">Order</a></div>
@@ -109,7 +112,7 @@
                     <div><a href="flexBasis.html" class="btn btn-success">Flex Basis</a></div>
                     <!-- <div><a href="flex.html" class="btn btn-success">Flex</a></div> -->
                 </div>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>

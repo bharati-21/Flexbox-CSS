@@ -47,62 +47,40 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-
-                justify-content: flex-start;
             }
 
             #container2 {
                 display: flex;
-                flex-direction: row;
+                flex-direction: row-reverse;
                 flex-wrap: wrap;
-                justify-content: flex-end;
             }
 
             #container3 {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 flex-wrap: wrap;
-                justify-content: center;
             }
 
             #container4 {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column-reverse;
                 flex-wrap: wrap;
-                justify-content: space-between;
-            }
-
-            #container5 {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-
-            #container6 {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
             }
 
             h1 {
                 text-align: center;
                 margin: 2rem 0 0 0;
                 line-height: 1;
-                /* font-size: 3rem; */
             }
 
             h2 {
                 margin: 0.75rem 0 0 0;
                 text-align: center;
-                /* font-size: 2.5rem; */
             }
 
             p {
                 margin-bottom: 2rem;
-                font-size: 1.8rem;
-                font-weight: bold;
+                font-size: 1.2rem;
             }
 
             nav {
@@ -147,8 +125,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="display.html">Display</a></li>
                 <li><a href="flexWrap.html">Flex Wrap</a></li>
-                <li><a href="flexDirection.html">Flex Direction</a></li>
-                <li><a href="justifyContent.html" class="current-link">Justify Content</a></li>
+                <li><a href="flexDirection.html" class="current-link">Flex Direction</a></li>
+                <li><a href="justifyContent.html">Justify Content</a></li>
                 <li><a href="alignItems.html">Align Items</a></li>
                 <li><a href="alignContent.html">Align Content</a></li>
             </ul>
@@ -164,7 +142,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: flex-start;</em></p>
+                <p><em>flex-direction: row;</em></p>
             </div>
 
             <div>
@@ -175,7 +153,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: flex-end;</em></p>
+                <p><em>flex-direction: row-reverse;</em></p>
             </div>
 
             <div>
@@ -186,7 +164,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: center;</em></p>
+                <p><em>flex-direction: column;</em></p>
             </div>
 
             <div>
@@ -197,29 +175,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: space-between;</em></p>
-            </div>
-
-            <div>
-                <div class="flex-container" id="container5">
-                    <div class="flex-item">1</div>
-                    <div class="flex-item">2</div>
-                    <div class="flex-item">3</div>
-                    <div class="flex-item">4</div>
-                    <div class="flex-item">5</div>
-                </div>
-                <p><em>justify-content: space-around;</em></p>
-            </div>
-
-            <div>
-                <div class="flex-container" id="container6">
-                    <div class="flex-item">1</div>
-                    <div class="flex-item">2</div>
-                    <div class="flex-item">3</div>
-                    <div class="flex-item">4</div>
-                    <div class="flex-item">5</div>
-                </div>
-                <p><em>justify-content: space-evenly;</em></p>
+                <p><em>flex-direction: column-reverse;</em></p>
             </div>
         </main>
     </body>
