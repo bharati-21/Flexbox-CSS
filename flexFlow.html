@@ -26,6 +26,10 @@
                 margin: 1.5rem auto;    
                 padding: 1rem 2rem;
                 border: 2px solid #000;
+
+                /* display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 0.75rem; */
             }
 
             .flex-container {
@@ -33,10 +37,12 @@
                 border: 2px solid #333;
                 border-radius: 5px;
                 margin: 1rem 0 0.5rem 0;
+                /* height: 300px;
+                width: 300px; */
             }
 
             .flex-item {
-                padding: 1.5rem;
+                padding: 1rem;
                 margin: 1rem;
                 border: 2px solid #333;
                 border-radius: 5px;
@@ -46,44 +52,62 @@
 
             #container1 {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: flex-start;
+                flex-flow: row nowrap;
             }
 
             #container2 {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: flex-end;
+                flex-flow: row wrap;
             }
 
             #container3 {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
+                flex-flow: row wrap-reverse;
             }
 
             #container4 {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
+                flex-flow: row-reverse nowrap;
             }
 
             #container5 {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
+                flex-flow: row-reverse wrap;
             }
 
             #container6 {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+                flex-flow: row-reverse wrap-reverse;
+            }
+
+            #container7 {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+
+            #container8 {
+                display: flex;
+                flex-flow: column wrap;
+            }
+
+            #container9 {
+                display: flex;
+                flex-flow: column wrap-reverse;
+            }
+
+            #container10 {
+                display: flex;
+                flex-flow: column-reverse nowrap;
+            }
+
+            #container11 {
+                display: flex;
+                flex-flow: column-reverse wrap;
+            }
+
+            #container12 {
+                display: flex;
+                flex-flow: column-reverse wrap-reverse;
             }
 
             h1 {
@@ -98,9 +122,13 @@
             }
 
             p {
-                margin-bottom: 2rem;
+                margin-bottom: 2.5rem;
                 font-size: 1.2rem;
                 font-weight: bold;
+            }
+
+            .container:last-child > p {
+                margin-bottom: 0;
             }
 
             nav {
@@ -146,16 +174,16 @@
                 <li><a href="display.html">Display</a></li>
                 <li><a href="flexDirection.html">Flex Direction</a></li>
                 <li><a href="flexWrap.html">Flex Wrap</a></li>
-                <li><a href="flexFlow.html">Flex Flow</a></li>
-                <li><a href="justifyContent.html" class="current-link">Justify Content</a></li>
+                <li><a href="flexFlow.html" class="current-link">Flex Flow</a></li>
+                <li><a href="justifyContent.html">Justify Content</a></li>
                 <li><a href="alignItems.html">Align Items</a></li>
                 <li><a href="alignContent.html">Align Content</a></li>
             </ul>
         </nav>
         <h1>PARENT FLEX PROPERTY</h1>
-        <h2><em>FLEX DIRECTION</em></h2>
+        <h2><em>FLEX FLOW</em></h2>
         <main>
-            <div class="no-wrap">
+            <div class="contianer">
                 <div class="flex-container" id="container1">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -163,32 +191,9 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: flex-start;</em></p>
+                <p><em>flex-flow: row nowrap;</em></p>
             </div>
-
-            <div>
-                <div class="flex-container" id="container2">
-                    <div class="flex-item">1</div>
-                    <div class="flex-item">2</div>
-                    <div class="flex-item">3</div>
-                    <div class="flex-item">4</div>
-                    <div class="flex-item">5</div>
-                </div>
-                <p><em>justify-content: flex-end;</em></p>
-            </div>
-
-            <div>
-                <div class="flex-container" id="container3">
-                    <div class="flex-item">1</div>
-                    <div class="flex-item">2</div>
-                    <div class="flex-item">3</div>
-                    <div class="flex-item">4</div>
-                    <div class="flex-item">5</div>
-                </div>
-                <p><em>justify-content: center;</em></p>
-            </div>
-
-            <div>
+            <div class="container">
                 <div class="flex-container" id="container4">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -196,10 +201,40 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: space-between;</em></p>
+                <p><em>flex-flow: row-reverse nowrap;</em></p>
+            </div>
+            <div class="container">
+                <div class="flex-container" id="container7">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: column nowrap;</em></p>
+            </div>
+            <div class="container">
+                <div class="flex-container" id="container10">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: column-reverse nowrap;</em></p>
             </div>
 
-            <div>
+            <div class="container">
+                <div class="flex-container" id="container2">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: row wrap;</em></p>
+            </div>
+            <div class="container">
                 <div class="flex-container" id="container5">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -207,10 +242,40 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: space-around;</em></p>
+                <p><em>flex-flow: row-reverse wrap;</em></p>
+            </div>
+            <div class="container">
+                <div class="flex-container" id="container8">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: column wrap;</em></p>
+            </div>
+            <div class="container">
+                <div class="flex-container" id="container11">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: column-reverse wrap;</em></p>
             </div>
 
-            <div>
+            <div class="container">
+                <div class="flex-container" id="container3">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: row wrap-reverse;</em></p>
+            </div>          
+            <div class="container">
                 <div class="flex-container" id="container6">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -218,7 +283,27 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><em>justify-content: space-evenly;</em></p>
+                <p><em>flex-flow: row-reverse wrap-reverse;</em></p>
+            </div>
+            <div class="container">
+                <div class="flex-container" id="container9">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: column wrap-reverse;</em></p>
+            </div>            
+            <div class="container">
+                <div class="flex-container" id="container12">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p><em>flex-flow: column-reverse wrap-reverse;</em></p>
             </div>
         </main>
     </body>
