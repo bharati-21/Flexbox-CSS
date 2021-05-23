@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Flexbox CSS</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.4;
+                background: #f8f9fa;
+                color: #000; 
+            }
+
+            main {
+                max-width: 1120px;
+                margin: 1rem auto;    
+                padding: 1rem 2rem;
+                border: 2px solid #000;
+            }
+
+            #container1, #container2 {
+                margin-top: 1.5rem;
+            }
+
+
+            .flex-container {
+                background: #f5c021;
+                border: 2px solid #333;
+                border-radius: 5px;
+                margin: 1rem 0 0.5rem 0;
+                display: flex;
+                /* align-items: center; */
+                /* align-content: center; */
+                justify-content: center;
+                height: 250px;
+            }
+
+            .flex-item {
+                padding: 1.5rem;
+                margin: 1rem;
+                border: 2px solid #333;
+                border-radius: 5px;
+                font-weight: bold;
+                background-color: #fff;
+                /* font-size: 1.5rem; */
+                text-align: center;
+                width: 100px;
+            }
+
+            
+            #item1 {
+                align-self: auto;
+            }
+
+            #item2 {
+                align-self: flex-start;
+            }
+
+            #item3 {
+                align-self: flex-end;
+            }
+
+            #item4 {
+                align-self: center;
+            }
+
+            #item5 {
+                align-self: baseline;
+                font-size: 3rem;
+            }
+
+            #item6 {
+                align-self: baseline;
+                font-size: 1rem;
+            }
+            
+
+            h1 {
+                text-align: center;
+                margin: 2rem 0 0 0;
+                line-height: 1;
+            }
+
+            h2 {
+                margin: 0.75rem 0 0 0;
+                text-align: center;
+            }
+
+            .container > p {
+                margin-bottom: 1.5rem;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            nav {
+                background: #333;
+                margin: 0;
+                padding: 1rem;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            li {
+                margin: 0.75rem 1rem;
+            }
+
+            a {
+                padding: 0.5rem 0.75rem;
+                border-radius: 5px;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            nav li a:hover {
+                background: #007bff90;
+                cursor: pointer;
+            }
+
+            .current-link {
+                background: #007bff;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="flexBasis.html">Flex Basis</a></li>
+                <li><a href="flexGrow.html">Flex Grow</a></li>
+                <li><a href="flexShrink.html">Flex Shrink</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="alignSelf.html" class="current-link">Align Self</a></li>
+            </ul>
+        </nav>
+        <h1>CHILDREN FLEX ITEM PROPERTY</h1>
+        <h2><em>ALIGN SELF</em></h2>
+        <main>
+
+            <div class="container">
+                <div class="flex-container" id="container">
+                    <div class="flex-item" id="item1">1
+                        <!-- <p><code>align-self: auto; // inherits</code></p> -->
+                    </div>
+                    <div class="flex-item" id="item2">2
+                        <!-- <p><code>align-self: flex-start; </code></p> -->
+                    </div>
+                    <div class="flex-item" id="item3">3
+                        <!-- <p><code>align-self: flex-end; </code></p> -->
+                    </div>
+                    <div class="flex-item" id="item4">4
+                        <!-- <p><code>align-self: center; </code></p> -->
+                    </div>
+                    <div class="flex-item" id="item5">5
+                        <!-- <p><code>align-self: baseline; </code></p> -->
+                    </div>
+                    <div class="flex-item" id="item6">6
+                        <!-- <p><code>align-self: baseline; </code></p> -->
+                    </div>
+                </div>
+                <p>Varying values of <em>align-self</em> applied to flex items</p>
+                <p>
+                    <code>align-self: auto; // It inherits the align-items value applied to parent. In this case <em>stretch</em></code> <br/>
+                    <code>align-self: flex-start;</code> <br/>
+                    <code>align-self: flex-end;</code><br/>
+                    <code>align-self: center;</code><br/>
+                    <code>align-self: baseline;</code><br/>
+                    <code>align-self: baseline;</code>
+                </p>
+            </div>
+        </main>
+    </body>
+</html>
