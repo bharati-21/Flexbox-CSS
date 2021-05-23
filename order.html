@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Flexbox CSS</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.4;
+                background: #f8f9fa;
+                color: #000; 
+            }
+
+            main {
+                max-width: 1120px;
+                margin: 1rem auto;    
+                padding: 1rem 2rem;
+                border: 2px solid #000;
+            }
+
+            #container1, #container2 {
+                margin-top: 1.5rem;
+                
+            }
+
+            
+
+            .flex-container {
+        
+                /* background: #17a2bb; */
+                background: #f5c021;
+                border: 2px solid #333;
+                border-radius: 5px;
+                margin: 1rem 0 0.5rem 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .flex-item {
+                padding: 1.5rem;
+                margin: 1rem;
+                border: 2px solid #333;
+                border-radius: 5px;
+                font-weight: bold;
+                background-color: #fff;
+                /* font-size: 1.5rem; */
+                text-align: center;
+            }
+
+            .container{
+                text-align: center;
+            }
+
+            #item1 {
+                order: 4;
+            }
+
+            #item5 {
+                order: 2;
+            }
+
+            #item4 {
+                order: 1;
+            }
+
+            #item3 {
+                order: -1;
+            }
+
+            #item2{
+                order: 1;
+            }
+
+            h1 {
+                text-align: center;
+                margin: 2rem 0 0 0;
+                line-height: 1;
+            }
+
+            h2 {
+                margin: 0.75rem 0 0 0;
+                text-align: center;
+            }
+
+            .container > p {
+                margin-bottom: 1.5rem;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            nav {
+                background: #333;
+                margin: 0;
+                padding: 1rem;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            li {
+                margin: 0.75rem 1rem;
+            }
+
+            a {
+                padding: 0.5rem 0.75rem;
+                border-radius: 5px;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            nav li a:hover {
+                background: #007bff90;
+                cursor: pointer;
+            }
+
+            .current-link {
+                background: #007bff;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html" class="current-link">Order</a></li>
+                <li><a href="flexBasis.html">Flex Basis</a></li>
+                <li><a href="flexGrow.html">Flex Grow</a></li>
+                <li><a href="flexShrink.html">Flex Shrink</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="alignSelf.html">Align Self</a></li>
+            </ul>
+        </nav>
+        <h1>CHILD FLEX PROPERTY</h1>
+        <h2><em>ORDER</em></h2>
+        <main>
+
+            <div class="container">
+                <div class="flex-container" id="container1">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                </div>
+                <p>Original order of elements</p>
+            </div>
+
+            <div class="container">
+                <div class="flex-container" id="container2">
+                    <div class="flex-item" id="item1">1
+                        <p><em>order: 4;</em></p>
+                    </div>
+                    <div class="flex-item" id="item2">2
+                        <p><em>order:1;</em></p>
+                    </div>
+                    <div class="flex-item" id="item3">3
+                        <p><em>order: -1;</em></p>
+                    </div>
+                    <div class="flex-item" id="item4">4
+                        <p><em>order: 1;</em></p>
+                    </div>
+                    <div class="flex-item" id="item5">5
+                        <p><em>order: 2;</em></p>
+                    </div>
+                </div>
+                <p>Order of elements after applying the <em>order</em> property</p>
+            </div>
+            
+        </main>
+    </body>
+</html>
