@@ -34,7 +34,7 @@
 
 
             .flex-container {
-                background: #17a2bb;
+                background: #f5c021;
                 border: 2px solid #333;
                 border-radius: 5px;
                 margin: 1rem 0 0.5rem 0;
@@ -75,17 +75,17 @@
             }
 
             #container4 > .flex-item {
-                flex: 1 0px;
+                flex: 1 1 auto;
                 /* All items grow and shrinks equally */
             }
 
             #container4 > #item1 {
-                flex: 2 0px;
+                flex: 2;
                 /* Grows 2 times as other items */
             }
 
             #container4 > #item2 {
-                flex: 3 0px;
+                flex: 5%;
                 /* Grows 3 times as other items */
             }
 
@@ -95,35 +95,15 @@
             }
 
             #container4 > #item4 {
-                flex: 0 100px;
+                flex: 1 2;
+                /* Grows 1 times relative to other items and shrinks 2 times compared to other items*/
+            }
+
+            #container4 > #item5 {
+                flex: 3 2 200px;
                 /* Does not grow beyond iniital size of 100px*/
             }
-
-            #container5 > .flex-item {
-                flex: 0 1 auto;
-                /* All items grow and shrinks equally */
-            }
-
-            #container5 > #item1 {
-                flex: 0 2 auto;
-                /* Grows 2 times as other items */
-            }
-
-            #container5 > #item2 {
-                flex: 0 3 auto;
-                /* Grows 3 times as other items */
-            }
-
-            #container5 > #item3 {
-                flex: 0 1.5 auto;
-                /* Grows 1.5 times as other items */
-            }
-
-            #container5 > #item4 {
-                flex: 0 1 100px;
-                /* Does not grow beyond iniital size of 100px*/
-            }
-
+            
             .flex-item > p {
                 font-size: 1rem;
             } 
@@ -205,7 +185,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><code>flex: auto; // default</code></p>
+                <p><code>flex: 0 1 auto | 0 auto; // default</code></p>
             </div>
 
             <div class="container">
@@ -216,7 +196,7 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><code>flex: auto; // default</code></p>
+                <p><code>flex: 1 1 auto | auto</code></p>
             </div>
 
             <div class="container">
@@ -227,49 +207,28 @@
                     <div class="flex-item">4</div>
                     <div class="flex-item">5</div>
                 </div>
-                <p><code>flex: auto; // default</code></p>
+                <p><code>flex: none | 0 0 auto</code></p>
             </div>
 
             <div class="container">
                 <div class="flex-container" id="container4">
                     <div class="flex-item" id="item1">1
-                        <p><code>flex-basis: 15%;</code></p>
+                        <p><code>flex: 2; // flex-grow only</code></p>
                     </div>
                     <div class="flex-item" id="item2">2
-                        <p><code>flex-basis: 7rem;</code></p>
+                        <p><code>flex: 5%; // flex-basis only</code></p>
                     </div>
                     <div class="flex-item" id="item3">3
-                        <p><code>flex-basis: 200px;</code></p>
+                        <p><code>flex: 1.5 0px; // flex-grow and flex-basis</code></p>
                     </div>
                     <div class="flex-item" id="item4">4
-                        <p><code>flex-basis: auto;</code></p>
+                        <p><code>flex: 1 2; // flex-grow and flex-shrink</code></p>
                     </div>
                     <div class="flex-item" id="item5">5
-                        <p><code>flex-basis: 150px;</code></p>
+                        <p><code>flex: 3 2 200px; // All three values</code></p>
                     </div>
                 </div>
-                <p>Flex items with varying <em>flex-basis</em> values</p>
-            </div>            
-
-            <div class="container">
-                <div class="flex-container" id="container5">
-                    <div class="flex-item" id="item1">1
-                        <p><code>flex-basis: 15%;</code></p>
-                    </div>
-                    <div class="flex-item" id="item2">2
-                        <p><code>flex-basis: 7rem;</code></p>
-                    </div>
-                    <div class="flex-item" id="item3">3
-                        <p><code>flex-basis: 200px;</code></p>
-                    </div>
-                    <div class="flex-item" id="item4">4
-                        <p><code>flex-basis: auto;</code></p>
-                    </div>
-                    <div class="flex-item" id="item5">5
-                        <p><code>flex-basis: 150px;</code></p>
-                    </div>
-                </div>
-                <p>Flex items with varying <em>flex-basis</em> values</p>
+                <p>Flex items with varying <em>flex</em> values</p>
             </div>            
         </main>
     </body>
