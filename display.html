@@ -29,14 +29,14 @@
             }
 
 
-            .flex-container {
+            .flex-container, .block-container {
                 background: #17a2bb;
                 border: 2px solid #333;
                 border-radius: 5px;
                 margin: 1rem 0 0.5rem 0;
             }
 
-            .flex-item {
+            .flex-item, .block-item {
                 padding: 1.5rem;
                 margin: 1rem;
                 border: 2px solid #333;
@@ -46,11 +46,15 @@
                 /* font-size: 1.5rem; */
             }
 
-            #container1 {
-                display: flex;
+            #container1 ~ p{
+                margin-bottom: 2.5rem;
             }
 
             #container2 {
+                display: flex;
+            }
+
+            #container3 {
                 display: inline-flex;
             }
 
@@ -124,7 +128,18 @@
         <h2><em>DISPLAY</em></h2>
         <main>
             <div class="container">
-                <div class="flex-container" id="container1">
+                <div class="block-container" id="container1">
+                    <div class="block-item">1</div>
+                    <div class="block-item">2</div>
+                    <div class="block-item">3</div>
+                    <div class="block-item">4</div>
+                    <div class="block-item">5</div>
+                </div>
+                <p><em>display: block; // Original alignment</em></p>
+            </div>
+
+            <div class="container">
+                <div class="flex-container" id="container2">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
                     <div class="flex-item">3</div>
@@ -135,7 +150,7 @@
             </div>
             
             <div class="container">
-                <div class="flex-container" id="container2">
+                <div class="flex-container" id="container3">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
                     <div class="flex-item">3</div>
