@@ -47,61 +47,54 @@
                 border-radius: 5px;
                 font-weight: bold;
                 background-color: #fff;
-
-                /* font-size: 1.5rem; */
             }
 
+
+            /* align-content: stretch; */
             #container1 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: flex-start; */
-                /* align-items: stretch; */
                 align-content: stretch;
             }
 
+            /* align-content: flex-start; */
             #container2 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: flex-end; */
-                /* align-items: flex-start; */
                 align-content: flex-start;
             }
 
+            /* align-content: flex-end; */
             #container3 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: center; */
-                /* align-items: flex-end; */
                 align-content: flex-end;
             }
 
+            /* align-content: center; */
             #container4 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: space-between; */
-                /* align-items: center; */
                 align-content: center;
             }
 
+            /* align-content: space-between; */
             #container5 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: space-around; */
-                /* align-items: baseline; */
                 align-content: space-between;
             }
 
+            /* align-content: space-around; */
             #container6 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: space-around; */
-                /* align-items: baseline; */
                 align-content: space-around;
             }
             
@@ -109,13 +102,11 @@
                 text-align: center;
                 margin: 2rem 0 0 0;
                 line-height: 1;
-                /* font-size: 3rem; */
             }
 
             h2 {
                 margin: 0.75rem 0 0 0;
                 text-align: center;
-                /* font-size: 2.5rem; */
             }
 
             p {
@@ -177,9 +168,12 @@
                 <li><a href="alignContent.html" class="current-link">Align Content</a></li>
             </ul>
         </nav>
+
         <h1>PARENT FLEX PROPERTY</h1>
         <h2><em>ALIGN CONTENT</em></h2>
+        
         <main>
+            <!-- align-content: stretch; -->
             <div class="container">
                 <div class="flex-container" id="container1">
                     <div class="flex-item">1</div>
@@ -191,6 +185,7 @@
                 <p><em>align-content: stretch; //Default</em></p>
             </div>
 
+            <!-- align-content: flex-start; -->
             <div class="container">
                 <div class="flex-container" id="container2">
                     <div class="flex-item">1</div>
@@ -202,6 +197,7 @@
                 <p><em>align-content: flex-start;</em></p>
             </div>
 
+            <!-- align-content: flex-end; -->
             <div class="container">
                 <div class="flex-container" id="container3">
                     <div class="flex-item">1</div>
@@ -213,6 +209,8 @@
                 <p><em>align-content: flex-end;</em></p>
             </div>
 
+
+            <!-- align-content: center; -->
             <div class="container">
                 <div class="flex-container" id="container4">
                     <div class="flex-item">1</div>
@@ -224,6 +222,8 @@
                 <p><em>align-content: center;</em></p>
             </div>
 
+
+            <!-- align-content: space-between; -->
             <div class="container">
                 <div class="flex-container" id="container5">
                     <div class="flex-item" id="item1">1</div>
@@ -235,6 +235,7 @@
                 <p><em>align-content: space-between;</em></p>
             </div>
             
+            <!-- align-content: space-around; -->
             <div class="container">
                 <div class="flex-container" id="container6">
                     <div class="flex-item" id="item1">1</div>

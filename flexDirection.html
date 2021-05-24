@@ -26,9 +26,6 @@
                 margin: 1rem auto;    
                 padding: 1rem 2rem;
                 border: 2px solid #000;
-                /* display: grid;
-                grid-gap: 2.5rem;
-                grid-template-columns: repeat(2, 1fr); */
             }
 
             .flex-container {
@@ -48,24 +45,28 @@
                 /* font-size: 1.5rem; */
             }
 
+            /* flex-direction: row; */
             #container1 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
             }
 
+            /* flex-direction: row-reverse; */
             #container2 {
                 display: flex;
                 flex-direction: row-reverse;
                 flex-wrap: wrap;
             }
 
+            /* flex-direction: column; */
             #container3 {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
             }
 
+            /* flex-direction: column-reverse; */
             #container4 {
                 display: flex;
                 flex-direction: column-reverse;
@@ -141,6 +142,8 @@
         <h1>PARENT FLEX PROPERTY</h1>
         <h2><em>FLEX DIRECTION</em></h2>
         <main>
+
+            <!-- flex-direction: row; -->
             <div class="container">
                 <div class="flex-container" id="container1">
                     <div class="flex-item">1</div>
@@ -152,6 +155,7 @@
                 <p><em>flex-direction: row; // Default</em></p>
             </div>
 
+            <!-- flex-direction: row-reverse; -->
             <div class="container">
                 <div class="flex-container" id="container2">
                     <div class="flex-item">1</div>
@@ -163,6 +167,7 @@
                 <p><em>flex-direction: row-reverse;</em></p>
             </div>
 
+            <!-- flex-direction: column; -->
             <div class="container">
                 <div class="flex-container" id="container3">
                     <div class="flex-item">1</div>
@@ -174,6 +179,7 @@
                 <p><em>flex-direction: column;</em></p>
             </div>
 
+            <!-- flex-direction: column-reverse; -->
             <div class="container">
                 <div class="flex-container" id="container4">
                     <div class="flex-item">1</div>

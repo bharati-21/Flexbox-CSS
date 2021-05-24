@@ -26,9 +26,6 @@
                 margin: 1rem auto;    
                 padding: 1rem 2rem;
                 border: 2px solid #000;
-                /* display: grid;
-                grid-template-columns: repeat(2 , 1fr);
-                grid-gap: 0 2rem; */
             }
 
             .flex-container {
@@ -46,43 +43,42 @@
                 border-radius: 5px;
                 font-weight: bold;
                 background-color: #fff;
-
-                /* font-size: 1.5rem; */
             }
 
+            /* align-items: stretch; */
             #container1 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: flex-start; */
                 align-items: stretch;
             }
 
+            /* align-items: flex-start; */
             #container2 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: flex-end; */
                 align-items: flex-start;
                 
             }
 
+            /* align-items: flex-end; */
             #container3 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: center; */
                 align-items: flex-end;
             }
 
+            /* align-items: center; */
             #container4 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                /* justify-content: space-between; */
                 align-items: center;
             }
 
+            /* align-items: baseline; */
             #container5 {
                 display: flex;
                 flex-direction: row;
@@ -111,13 +107,11 @@
                 text-align: center;
                 margin: 2rem 0 0 0;
                 line-height: 1;
-                /* font-size: 3rem; */
             }
 
             h2 {
                 margin: 0.75rem 0 0 0;
                 text-align: center;
-                /* font-size: 2.5rem; */
             }
 
             p {
@@ -179,9 +173,12 @@
                 <li><a href="alignContent.html">Align Content</a></li>
             </ul>
         </nav>
+
         <h1>PARENT FLEX PROPERTY</h1>
         <h2><em>ALIGN ITEMS</em></h2>
+        
         <main>
+            <!-- align-items: stretch; -->
             <div class="container">
                 <div class="flex-container" id="container1">
                     <div class="flex-item">1</div>
@@ -193,6 +190,7 @@
                 <p><em>align-items: stretch; //Default</em></p>
             </div>
 
+            <!-- align-items: flex-start; -->
             <div class="container">
                 <div class="flex-container" id="container2">
                     <div class="flex-item">1</div>
@@ -204,6 +202,7 @@
                 <p><em>align-items: flex-start;</em></p>
             </div>
 
+            <!-- align-items: flex-end; -->
             <div class="container">
                 <div class="flex-container" id="container3">
                     <div class="flex-item">1</div>
@@ -215,6 +214,7 @@
                 <p><em>align-items: flex-end;</em></p>
             </div>
 
+            <!-- align-items: center; -->
             <div class="container">
                 <div class="flex-container" id="container4">
                     <div class="flex-item">1</div>
@@ -226,6 +226,7 @@
                 <p><em>align-items: center;</em></p>
             </div>
 
+            <!-- align-items: baseline; -->
             <div class="container">
                 <div class="flex-container" id="container5">
                     <div class="flex-item" id="item1">1</div>

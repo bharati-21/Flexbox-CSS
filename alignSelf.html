@@ -39,8 +39,6 @@
                 border-radius: 5px;
                 margin: 1rem 0 0.5rem 0;
                 display: flex;
-                /* align-items: center; */
-                /* align-content: center; */
                 justify-content: center;
                 height: 250px;
             }
@@ -52,14 +50,13 @@
                 border-radius: 5px;
                 font-weight: bold;
                 background-color: #fff;
-                /* font-size: 1.5rem; */
                 text-align: center;
                 width: 100px;
             }
 
             
             #item1 {
-                align-self: auto;
+                align-self: auto; /* default */
             }
 
             #item2 {
@@ -157,25 +154,32 @@
             <div class="container">
                 <div class="flex-container" id="container">
                     <div class="flex-item" id="item1">1
-                        <!-- <p><code>align-self: auto; // inherits</code></p> -->
+                        <!-- align-self: auto;  -->
                     </div>
+
                     <div class="flex-item" id="item2">2
-                        <!-- <p><code>align-self: flex-start; </code></p> -->
+                        <!-- align-self:  -->
                     </div>
+
                     <div class="flex-item" id="item3">3
-                        <!-- <p><code>align-self: flex-end; </code></p> -->
+                        <!-- align-self: flex-end;  -->
                     </div>
+
                     <div class="flex-item" id="item4">4
-                        <!-- <p><code>align-self: center; </code></p> -->
+                        <!-- align-self: center;  -->
                     </div>
+
                     <div class="flex-item" id="item5">5
-                        <!-- <p><code>align-self: baseline; </code></p> -->
+                        <!-- align-self: baseline;  -->
                     </div>
+
                     <div class="flex-item" id="item6">6
-                        <!-- <p><code>align-self: baseline; </code></p> -->
+                        <!-- align-self: baseline;  -->
                     </div>
                 </div>
+
                 <p>Varying values of <em>align-self</em> applied to flex items</p>
+
                 <p>
                     <code>align-self: auto; // Default. It inherits the align-items value applied to parent. In this case <em>stretch</em></code> <br/>
                     <code>align-self: flex-start;</code> <br/>

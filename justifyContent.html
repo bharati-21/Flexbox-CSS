@@ -44,13 +44,15 @@
                 background-color: #fff;
             }
 
+            /* justify-content: flex-start;*/
             #container1 {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: flex-start;
+                justify-content: flex-start; /* Default*/
             }
 
+            /* justify-content: flex-end; */
             #container2 {
                 display: flex;
                 flex-direction: row;
@@ -58,6 +60,7 @@
                 justify-content: flex-end;
             }
 
+            /* justify-content: center; */
             #container3 {
                 display: flex;
                 flex-direction: row;
@@ -65,6 +68,7 @@
                 justify-content: center;
             }
 
+            /* justify-content: space-between; */
             #container4 {
                 display: flex;
                 flex-direction: row;
@@ -72,6 +76,7 @@
                 justify-content: space-between;
             }
 
+            /* justify-content: space-around; */
             #container5 {
                 display: flex;
                 flex-direction: row;
@@ -79,6 +84,7 @@
                 justify-content: space-around;
             }
 
+            /* justify-content: space-evenly; */
             #container6 {
                 display: flex;
                 flex-direction: row;
@@ -152,10 +158,13 @@
                 <li><a href="alignContent.html">Align Content</a></li>
             </ul>
         </nav>
+
         <h1>PARENT FLEX PROPERTY</h1>
         <h2><em>FLEX DIRECTION</em></h2>
+
         <main>
-            <div class="no-wrap">
+            <!-- justify-content: flex-start; -->
+            <div class="container">
                 <div class="flex-container" id="container1">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -166,7 +175,8 @@
                 <p><em>justify-content: flex-start; // Default</em></p>
             </div>
 
-            <div>
+            <!-- justify-content: flex-end; -->
+            <div class="container">
                 <div class="flex-container" id="container2">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -177,7 +187,8 @@
                 <p><em>justify-content: flex-end;</em></p>
             </div>
 
-            <div>
+            <!-- justify-content: center; -->
+            <div class="container">
                 <div class="flex-container" id="container3">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -188,7 +199,8 @@
                 <p><em>justify-content: center;</em></p>
             </div>
 
-            <div>
+            <!-- justify-content: space-between; -->
+            <div class="container">
                 <div class="flex-container" id="container4">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -199,7 +211,8 @@
                 <p><em>justify-content: space-between;</em></p>
             </div>
 
-            <div>
+            <!-- justify-content: space-around; -->
+            <div class="container">
                 <div class="flex-container" id="container5">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>
@@ -210,7 +223,8 @@
                 <p><em>justify-content: space-around;</em></p>
             </div>
 
-            <div>
+            <!-- justify-content: space-evenly; -->
+            <div class="container">
                 <div class="flex-container" id="container6">
                     <div class="flex-item">1</div>
                     <div class="flex-item">2</div>

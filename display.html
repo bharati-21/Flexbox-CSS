@@ -28,7 +28,7 @@
                 border: 2px solid #000;
             }
 
-
+            
             .flex-container, .block-container {
                 background: #17a2bb;
                 border: 2px solid #333;
@@ -50,10 +50,12 @@
                 margin-bottom: 2.5rem;
             }
 
+            /* Alignment of the container and flex items on the browser when flex is applied */
             #container2 {
                 display: flex;
             }
 
+            /*Alignment of the container and flex items on the browser when inline-flex is applied */
             #container3 {
                 display: inline-flex;
             }
@@ -124,9 +126,12 @@
                 <li><a href="alignContent.html">Align Content</a></li>
             </ul>
         </nav>
+
         <h1>PARENT FLEX PROPERTY</h1>
         <h2><em>DISPLAY</em></h2>
+
         <main>
+            <!-- display: block; -->
             <div class="container">
                 <div class="block-container" id="container1">
                     <div class="block-item">1</div>
@@ -138,6 +143,7 @@
                 <p><em>display: block; // Original alignment</em></p>
             </div>
 
+            <!-- display: flex; -->
             <div class="container">
                 <div class="flex-container" id="container2">
                     <div class="flex-item">1</div>
@@ -149,6 +155,7 @@
                 <p><em>display: flex;</em></p>
             </div>
             
+            <!-- display: inline-flex -->
             <div class="container">
                 <div class="flex-container" id="container3">
                     <div class="flex-item">1</div>
