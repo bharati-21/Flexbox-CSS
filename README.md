@@ -3,6 +3,7 @@ Repository that has demo of all Flex Properties
 
 - This webstie has detailed examples for flex-container and flex-item properties with all possible values.
 - [Check out the demo here](https://demo-flexbox.netlify.app/)
+- [Check out the blog here](https://dev.to/bharati21/css-flexbox-making-layout-design-easy-part-1-24l5)
 
 
 ### PROPERTIES EXPLAINED:
